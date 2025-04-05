@@ -7,7 +7,8 @@
 }
 
 #root{
-    height: 100vh;
+    height: 100vh;    
+    background-size: 100%;
 }
 
 body,
@@ -17,6 +18,10 @@ html {
     width: 100vw;
     overflow-x: hidden;
     background-color: #1f1f1f;
+    background-image: url(./img/fundo.jpg);
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat;   
 
 }
 
@@ -75,3 +80,70 @@ h1 {
     font-size: 50px;
     font-weight: 200;
 }
+
+@media (max-width: 1024px) {
+    .container {
+      width: 90%;
+      height: auto;
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 40px;
+    }
+  
+    .container-input input {
+      font-size: 18px;
+      width: 100%;
+    }
+  
+    button {
+      padding: 8px 12px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    .container-input {
+      gap: 10px;
+    }
+  
+    .container-input input {
+      width: 100%;
+      font-size: 16px;
+    }
+
+    button {
+        width: 50px;
+        font-size: 16px;
+      }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .container-input input {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
